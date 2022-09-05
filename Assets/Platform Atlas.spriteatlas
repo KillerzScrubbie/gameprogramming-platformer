@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Platform Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2083069250, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1520228389, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1554509839, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -192899936, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 560080464, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -43232646, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1037739375, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 300584809, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1474526557, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 2011963077, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1921993777, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1857691542, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1686630767, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -2095739441, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 730460770, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1678096435, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1766016954, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 226914961, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1956205477, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 593590917, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1768627878, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1288322913, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -951715223, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1396703076, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 108743395, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 139861886, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 594279570, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1362205944, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -985004929, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -161589655, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 2049458123, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1915520201, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1511571506, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -139930430, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1990117472, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1031591841, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1426643145, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 395224650, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1485780739, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1572594427, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 657625721, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 375821540, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 491281930, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1160889823, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 701611785, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 233406713, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 563471172, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 996164165, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -405059060, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 946774823, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1594969019, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 52384159, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -542491366, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 910128142, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -278915921, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -706479536, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1220207285, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 722936232, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 2008104659, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1966989035, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1237736811, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1811907715, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -697992186, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 588893960, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1254854994, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1496176363, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -154797388, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 471775570, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1287844912, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1104876219, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1995667716, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1328515406, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1539492783, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1560865444, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 1293135663, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -684777288, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -2116578548, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 107598689, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1325965908, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1334504412, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -1725863416, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: -2130028998, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  - {fileID: 179366789, guid: 944d726096e77d643b2a8c56e779cd57, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - platformPack_tilesheet@2_33
+  - platformPack_tilesheet@2_32
+  - platformPack_tilesheet@2_31
+  - platformPack_tilesheet@2_30
+  - platformPack_tilesheet@2_37
+  - platformPack_tilesheet@2_36
+  - platformPack_tilesheet@2_35
+  - platformPack_tilesheet@2_19
+  - platformPack_tilesheet@2_34
+  - platformPack_tilesheet@2_18
+  - platformPack_tilesheet@2_39
+  - platformPack_tilesheet@2_38
+  - platformPack_tilesheet@2_68
+  - platformPack_tilesheet@2_11
+  - platformPack_tilesheet@2_69
+  - platformPack_tilesheet@2_10
+  - platformPack_tilesheet@2_13
+  - platformPack_tilesheet@2_12
+  - platformPack_tilesheet@2_64
+  - platformPack_tilesheet@2_15
+  - platformPack_tilesheet@2_65
+  - platformPack_tilesheet@2_14
+  - platformPack_tilesheet@2_66
+  - platformPack_tilesheet@2_17
+  - platformPack_tilesheet@2_67
+  - platformPack_tilesheet@2_16
+  - platformPack_tilesheet@2_60
+  - platformPack_tilesheet@2_61
+  - platformPack_tilesheet@2_62
+  - platformPack_tilesheet@2_82
+  - platformPack_tilesheet@2_63
+  - platformPack_tilesheet@2_80
+  - platformPack_tilesheet@2_81
+  - platformPack_tilesheet@2_2
+  - platformPack_tilesheet@2_3
+  - platformPack_tilesheet@2_0
+  - platformPack_tilesheet@2_1
+  - platformPack_tilesheet@2_6
+  - platformPack_tilesheet@2_7
+  - platformPack_tilesheet@2_4
+  - platformPack_tilesheet@2_5
+  - platformPack_tilesheet@2_8
+  - platformPack_tilesheet@2_9
+  - platformPack_tilesheet@2_20
+  - platformPack_tilesheet@2_21
+  - platformPack_tilesheet@2_22
+  - platformPack_tilesheet@2_42
+  - platformPack_tilesheet@2_23
+  - platformPack_tilesheet@2_43
+  - platformPack_tilesheet@2_24
+  - platformPack_tilesheet@2_40
+  - platformPack_tilesheet@2_25
+  - platformPack_tilesheet@2_41
+  - platformPack_tilesheet@2_55
+  - platformPack_tilesheet@2_26
+  - platformPack_tilesheet@2_46
+  - platformPack_tilesheet@2_54
+  - platformPack_tilesheet@2_27
+  - platformPack_tilesheet@2_47
+  - platformPack_tilesheet@2_57
+  - platformPack_tilesheet@2_28
+  - platformPack_tilesheet@2_44
+  - platformPack_tilesheet@2_56
+  - platformPack_tilesheet@2_29
+  - platformPack_tilesheet@2_45
+  - platformPack_tilesheet@2_51
+  - platformPack_tilesheet@2_50
+  - platformPack_tilesheet@2_53
+  - platformPack_tilesheet@2_48
+  - platformPack_tilesheet@2_52
+  - platformPack_tilesheet@2_49
+  - platformPack_tilesheet@2_59
+  - platformPack_tilesheet@2_58
+  - platformPack_tilesheet@2_79
+  - platformPack_tilesheet@2_78
+  - platformPack_tilesheet@2_77
+  - platformPack_tilesheet@2_76
+  - platformPack_tilesheet@2_75
+  - platformPack_tilesheet@2_74
+  - platformPack_tilesheet@2_73
+  - platformPack_tilesheet@2_72
+  - platformPack_tilesheet@2_71
+  - platformPack_tilesheet@2_70
+  m_RenderDataMap: {}
+  m_Tag: Platform Atlas
+  m_IsVariant: 0
