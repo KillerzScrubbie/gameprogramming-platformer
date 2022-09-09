@@ -16,18 +16,7 @@ public class PlayerCollision : MonoBehaviour
         
         var collectibleType = collectible.GetCollectibleInfoOnContact();
 
-        spriteRenderer.color = collectibleType switch
-        {
-            CollectibleType.Red => redColor,
-            CollectibleType.Green => greenColor,
-            CollectibleType.Blue => blueColor,
-            _ => spriteRenderer.color 
-            // The underscore is the default case. (else) This case will not be used as we only have 3 CollectibleType in the enum.
-        };
-            
-        /* The switch expression above is equivalent to this code here.
-             *
-             * switch (collectibleType)
+        switch (collectibleType)
             {
                 case CollectibleType.Red:
                     spriteRenderer.color = redColor;
@@ -39,7 +28,5 @@ public class PlayerCollision : MonoBehaviour
                     spriteRenderer.color = blueColor;
                     break;
             }
-             * 
-             */
     }
 }

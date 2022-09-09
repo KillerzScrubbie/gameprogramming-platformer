@@ -18,18 +18,9 @@ public class RandomCollectibles : MonoBehaviour
     private void OnEnable()
     {
         var randomizedIndex = Random.Range(0, sprites.Length);
+        CollectibleType collectibleType;
         
-        var collectibleType = randomizedIndex switch
-        {
-            1 => CollectibleType.Green,
-            2 => CollectibleType.Blue,
-            _ => CollectibleType.Red  // The underscore means default case. (else)
-        };
-        
-        /*
-         * The switch expression above is equivalent to this code here.
-         *
-         *   switch (randomizedIndex)
+        switch (randomizedIndex)
             {
             default: // or case 0:
                 collectibleType = CollectibleType.Red;
@@ -41,8 +32,7 @@ public class RandomCollectibles : MonoBehaviour
                 collectibleType = CollectibleType.Blue;
                 break;
             }
-        */
-        
+
         _collectible.SetCollectibleType(collectibleType);
         spriteRenderer.sprite = sprites[randomizedIndex];
     }
