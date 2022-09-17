@@ -6,7 +6,7 @@ public class RandomCollectibles : MonoBehaviour
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
-    private Collectibles _collectible;
+    /*private Collectibles _collectible;
 
     private void Awake()
     {
@@ -35,5 +35,5 @@ public class RandomCollectibles : MonoBehaviour
 
         _collectible.SetCollectibleType(collectibleType);
         spriteRenderer.sprite = sprites[randomizedIndex];
-    }
+    }*/
 }

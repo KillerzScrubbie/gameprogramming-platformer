@@ -1,6 +1,7 @@
 public enum CollectibleType
 {
-    Red,
-    Green,
-    Blue,
+    RefillHealth,
+    RefillEnergy,
+    RefillDash,
+    DoubleJump,
 }

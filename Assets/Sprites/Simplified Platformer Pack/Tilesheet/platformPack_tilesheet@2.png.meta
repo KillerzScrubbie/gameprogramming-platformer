@@ -1376,7 +1376,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -62, y: -64}
+        - {x: -41, y: -15}
+        - {x: 43, y: -15}
+        - {x: 64, y: -64}
       tessellationDetail: 0
       bones: []
       spriteID: 25239515ea4bbb541856a8e33ae2aef6
@@ -1866,7 +1870,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      platformPack_tilesheet@2_68: 1686630767
+      platformPack_tilesheet@2_56: -697992186
       platformPack_tilesheet@2_25: 52384159
       platformPack_tilesheet@2_45: 1254854994
       platformPack_tilesheet@2_4: -1572594427
@@ -1886,7 +1890,7 @@ TextureImporter:
       platformPack_tilesheet@2_19: 300584809
       platformPack_tilesheet@2_75: 107598689
       platformPack_tilesheet@2_53: 471775570
-      platformPack_tilesheet@2_17: -1396703076
+      platformPack_tilesheet@2_52: -1104876219
       platformPack_tilesheet@2_55: 910128142
       platformPack_tilesheet@2_62: -985004929
       platformPack_tilesheet@2_14: -1288322913
@@ -1945,9 +1949,9 @@ TextureImporter:
       platformPack_tilesheet@2_8: 375821540
       platformPack_tilesheet@2_59: 1328515406
       platformPack_tilesheet@2_34: -1474526557
-      platformPack_tilesheet@2_52: -1104876219
+      platformPack_tilesheet@2_17: -1396703076
+      platformPack_tilesheet@2_68: 1686630767
       platformPack_tilesheet@2_23: 996164165
-      platformPack_tilesheet@2_56: -697992186
       platformPack_tilesheet@2_82: -161589655
   spritePackingTag: 
   pSDRemoveMatte: 0
