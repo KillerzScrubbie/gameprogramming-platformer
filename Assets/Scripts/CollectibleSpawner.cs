@@ -10,6 +10,11 @@ public class CollectibleSpawner : MonoBehaviour
     [Header("Collectible Settings")]
     [SerializeField] private float respawnTime = 4f;
 
+    private void Start()
+    {
+        spriteRenderer.enabled = false;
+    }
+    
     private IEnumerator RespawnCollectible()
     {
         yield return new WaitForSeconds(respawnTime);

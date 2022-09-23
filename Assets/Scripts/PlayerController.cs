@@ -35,10 +35,6 @@ public class PlayerController : MonoBehaviour
     // Stored References
     private GameManager _gameManager;
 
-    private void Start()
-    {
-        _gameManager = FindObjectOfType<GameManager>();
-    }
     private void Update()
     {
         CheckGround();
@@ -49,6 +45,13 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+    }
+
+    private void FindGameManager()
+    {
+        if (_gameManager != null) return;
+        
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     #region Actions
@@ -134,6 +137,7 @@ public class PlayerController : MonoBehaviour
     
     public void TakeDamage()
     {
+        FindGameManager();
         _gameManager.ProcessPlayerDeath();
     }
     
@@ -155,6 +159,12 @@ public class PlayerController : MonoBehaviour
         TryJumping();
     }
 
+    private void OnQuit(InputValue value)
+    {
+        FindGameManager();
+        _gameManager.ReturnToMainMenu();
+    }
+    
     #endregion
 
 }
