@@ -12,4 +12,6 @@ public class SoCollectibles : ScriptableObject
     public CollectibleType GetCollectibleType() => collectibleType;
     public Sprite GetOutlineSprite() => outlineSprite;
     public bool GetRespawnable() => respawnable;
+    
+    // Test
 }
