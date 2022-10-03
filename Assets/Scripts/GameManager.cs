@@ -1,3 +1,4 @@
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private UIManager uiManager;
     [SerializeField] private int playerLives = 3;
+    [SerializeField] private float timeBeforeSceneChange = 1.5f;
     // Simple singleton script. This is the easiest way to create and understand a singleton script.
     
     private void Awake()
@@ -46,7 +48,6 @@ public class GameManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         LoadScene(0);
-        Destroy(gameObject);
     }
     
     public void LoadNextLevel()
@@ -68,8 +69,17 @@ public class GameManager : MonoBehaviour
 
     private void LoadScene(int buildIndex)
     {
+        StartCoroutine(BeginSceneLoad(buildIndex));
+    }
+
+    private IEnumerator BeginSceneLoad(int buildIndex)
+    {
+        yield return new WaitForSeconds(timeBeforeSceneChange);
         SceneManager.LoadScene(buildIndex);
         DOTween.KillAll();
+
+        if (buildIndex != 0) yield break;
+        Destroy(gameObject);
     }
 
     private void UpdateLives()
