@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Collider2D playerCollider;
     [SerializeField] private PlayerAnimatorController animatorController;
     [SerializeField] private PlayerAudioController audioController;
+    [SerializeField] private PlayerParticlesController particlesController;
 
     [Header("Player Values")] 
     [SerializeField] private float movementSpeed = 3f;
@@ -47,12 +48,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        SetAnimatorParameters();
+        SetAnimatorParametersAndParticles();
     }
     
     private void FixedUpdate()
     {
         CheckGround();
+        CheckForFallImpact();
         CheckCanJump();
         Move();
     }
@@ -119,10 +121,14 @@ public class PlayerController : MonoBehaviour
             groundLayers);
 
         _isGrounded = raycastHit.collider != null;
+    }
 
+    private void CheckForFallImpact()
+    {
         if (!_hasLanded && _isGrounded)
         {
             audioController.PlayFallImpact();
+            particlesController.PlayImpactParticles();
         }
         
         _hasLanded = _isGrounded;
@@ -146,9 +152,10 @@ public class PlayerController : MonoBehaviour
         _canJump = false; // If the coyote time timer goes beyond the threshold, the player can no longer jump.
     }
 
-    private void SetAnimatorParameters()
+    private void SetAnimatorParametersAndParticles()
     {
         animatorController.SetAnimatorParameters(rb.velocity, _isGrounded);
+        particlesController.PlayWalkParticles(_isGrounded);
     }
 
     public void EnableDoubleJump()

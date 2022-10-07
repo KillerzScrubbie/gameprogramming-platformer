@@ -4,6 +4,7 @@ public class FinishLine : MonoBehaviour
 {
     [SerializeField] private SoAudioClips winAudioClips;
     [SerializeField] private AudioPlayer audioPlayer;
+    [SerializeField] private GameObject winParticlesObject;
     
     private const string PlayerTag = "Player";
 
@@ -23,6 +24,7 @@ public class FinishLine : MonoBehaviour
         _triggeredNextScene = true;   // This is to prevent double scene loads.
         _gameManager = FindObjectOfType<GameManager>();
         audioPlayer.PlaySound(winAudioClips);
+        winParticlesObject.SetActive(true);
         _gameManager.LoadNextLevel();
     }
 }

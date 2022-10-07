@@ -9,8 +9,11 @@ public class CollectibleSpawner : MonoBehaviour
     [SerializeField] private AudioPlayer audioPlayer;
     [SerializeField] private SoAudioClips collectAudioClips;
     [SerializeField] private SoAudioClips respawnAudioClips;
-    
-    [Header("Collectible Settings")]
+    [SerializeField] private GameObject collectedParticlesObject;
+    [SerializeField] private GameObject respawnedParticlesObject;
+
+    [Header("Collectible Settings")] 
+    [SerializeField] private float respawnParticlesDuration = 0.3f;
     [SerializeField] private float respawnTime = 4f;
 
     private void Start()
@@ -20,7 +23,10 @@ public class CollectibleSpawner : MonoBehaviour
     
     private IEnumerator RespawnCollectible()
     {
-        yield return new WaitForSeconds(respawnTime);
+        yield return new WaitForSeconds(respawnTime - respawnParticlesDuration);
+        respawnedParticlesObject.SetActive(true);
+        
+        yield return new WaitForSeconds(respawnParticlesDuration);
         SetOutlineSpriteActive(false);
         PlayRespawn();
         collectibleGameObject.SetActive(true);
@@ -43,7 +49,7 @@ public class CollectibleSpawner : MonoBehaviour
         StartCoroutine(RespawnCollectible());
     }
     
-    #region Audio
+    #region Effects
     private void PlayRespawn()
     {
         audioPlayer.PlaySound(respawnAudioClips);
@@ -51,6 +57,7 @@ public class CollectibleSpawner : MonoBehaviour
 
     private void PlayCollected()
     {
+        collectedParticlesObject.SetActive(true);
         audioPlayer.PlaySound(collectAudioClips);
     }
     #endregion

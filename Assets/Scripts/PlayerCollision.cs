@@ -4,6 +4,7 @@ public class PlayerCollision : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
     [SerializeField] private PlayerAudioController audioController;
+    [SerializeField] private PlayerParticlesController particlesController;
 
     private Collider2D _playerCollider;
     private void Start()
@@ -16,9 +17,10 @@ public class PlayerCollision : MonoBehaviour
         playerController.Jump(jumpPadForce, jumpTimeSleep);
     }
 
-    public void MuteFallImpactSounds()
+    public void SuppressNormalJumpEffects()
     {
         audioController.MuteAudioSource();
+        particlesController.TriggeredByJumpPad();
     }
     
     private void OnTriggerEnter2D(Collider2D col)
@@ -38,35 +40,11 @@ public class PlayerCollision : MonoBehaviour
                 default:
                     break;
             }
-            
-            Debug.Log(collectibleType);
         }
 
-        if (_playerCollider.IsTouchingLayers(LayerMask.GetMask("Hazard")))
-        {
-            playerController.TakeDamage();
-        }
-
-        #region Unused
-
-        /*if (!col.TryGetComponent(out Collectibles collectible)) return;  
-        // This is an inverted if. If the above condition is not met, return void (stop this function).
+        if (!_playerCollider.IsTouchingLayers(LayerMask.GetMask("Hazard"))) return;
         
-        var collectibleType = collectible.GetCollectibleInfoOnContact();
-
-        switch (collectibleType)
-            {
-                case CollectibleType.Red:
-                    spriteRenderer.color = redColor;
-                    break;
-                case CollectibleType.Green:
-                    spriteRenderer.color = greenColor;
-                    break;
-                case CollectibleType.Blue:
-                    spriteRenderer.color = blueColor;
-                    break;
-            }*/
-
-        #endregion
+        playerController.TakeDamage();
+        particlesController.PlayDeathParticles();
     }
 }

@@ -183,7 +183,7 @@ MonoBehaviour:
   audioPlayer: {fileID: 5958218022358019864}
   jumpPadAudioClips: {fileID: 11400000, guid: 546dfb1a996becb42b25bbc3bc54ac24, type: 2}
   jumpPadForce: 13
-  additionalSleepJumpTime: 0.3
+  additionalSleepJumpTime: 0.05
 --- !u!82 &7955062124712115728
 AudioSource:
   m_ObjectHideFlags: 0

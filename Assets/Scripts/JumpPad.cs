@@ -21,7 +21,7 @@ public class JumpPad : MonoBehaviour
         if (!col.TryGetComponent(out PlayerCollision playerCollision)) return;
 
         TriggerJumpPad();
-        playerCollision.MuteFallImpactSounds();
+        playerCollision.SuppressNormalJumpEffects();
         playerCollision.Bounce(jumpPadForce, additionalSleepJumpTime);
     }
 }

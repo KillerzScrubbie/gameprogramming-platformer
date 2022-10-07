@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
@@ -32,12 +33,12 @@ public class GameManager : MonoBehaviour
     public void ProcessPlayerDeath()
     {
         playerLives--;
+        UpdateLives();
         
         switch (playerLives)
         {
             case >= 1:
                 LoadScene(GetCurrentBuildIndex());
-                UpdateLives();
                 break;
             default:
                 ReturnToMainMenu();
